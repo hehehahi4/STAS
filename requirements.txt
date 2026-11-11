@@ -1,0 +1,11 @@
+torch>=2.0
+transformers>=4.40
+Pillow
+scikit-learn
+numpy
+pandas
+pyarrow
+tqdm
+accelerate
+sentencepiece
+nltk
