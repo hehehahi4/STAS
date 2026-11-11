@@ -1,4 +1,13 @@
-# STAS
+<div align="center">
+  
+  <h1>STAS: Subspace- and Token-Adaptive Steering for Mitigating Hallucinations in Large Vision-Language Models</h1>
+
+</div>
+
+[![arXiv](https://img.shields.io/badge/arXiv-2611-red.svg)]()
+
+## 🐘 Introduction
+Despite demonstrating impressive multimodal capabilities, Large Vision-Language Models (LVLMs) frequently suffer from hallucinations. Activation steering is an inference-time intervention technique that mitigates hallucinations by identifying their direction in the hidden states and manipulating the model to shift away from that direction. However, existing methods typically rely on either a static global direction or an entangled monolithic vector with a uniform steering strength across all tokens, which is imprecise and inflexible when confronting diverse hallucinations. To address these limitations, we propose Subspace- and Token-Adaptive Steering (STAS), a framework that dynamically synthesizes specific steering directions and scales steering strength. Specifically, STAS first constructs a low-dimensional orthogonal subspace to disentangle diverse hallucination patterns. A lightweight cross-modal router is then trained to predict projection coefficients and synthesize input-specific steering directions within this subspace. Furthermore, we introduce a token-adaptive strength scaling mechanism by measuring uncertainty inside the model. This ensures that strong interventions are selectively applied to high-risk semantic tokens without disrupting the syntactic fluency of low-risk tokens. Extensive experiments demonstrate that STAS outperforms existing baselines across multiple architectures and benchmarks.
 
 
 ## 🎭 Getting Started
